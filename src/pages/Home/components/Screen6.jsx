@@ -51,7 +51,7 @@ export default Screen6
 const FAQ = ({ question, answer, index }) => {
     const [showAns, setshowAns] = useState(false)
     return (
-        <div className="w-full lg:w-3/4 hover:bg-white/10 text-white duration-500">
+        <div data-aos="fade-left" className="w-full lg:w-3/4 hover:bg-white/10 text-white duration-500">
             <div className={`${showAns && 'bg-white text-black'} min-h-[100px] flex justify-between items-center px-[2%]`} onClick={() => { setshowAns(!showAns) }}>
                 <div className="flex gap-10 items-center">
                     <button className='h-12 w-12 rounded-full border border-white flex-shrink-0'>{index}</button>

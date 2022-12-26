@@ -51,7 +51,7 @@ export default Screen5
 const RoadMap = ({ title, desc, index }) => {
     const [showDesc, setShowDesc] = useState(false)
     return (
-        <div className="w-full lg:w-3/4 hover:bg-white/10 text-white duration-500">
+        <div className="w-full lg:w-3/4 hover:bg-white/10 text-white duration-500" data-aos="fade-left">
             <div className={`${showDesc && 'bg-white text-black'} min-h-[100px] flex justify-between items-center px-[2%]`} onClick={() => { setShowDesc(!showDesc) }}>
                 <div className="flex gap-10 items-center">
                     <button className='h-12 w-12 rounded-full border border-white flex-shrink-0'>{index}</button>

@@ -6,13 +6,13 @@ function Screen3() {
             <div className="space-y-10">
                 <div className="space-y-3">
                     <h3 className='text-[#F43F5E] font-bold text-2xl'>STEP 1</h3>
-                    <ul className='text-xl font-medium'>
+                    <ul data-aos="fade-up-left" className='text-xl font-medium'>
                         <li>Get a Vape Monkey NFT Ape NFT</li>
                     </ul>
                 </div>
                 <div className="space-y-3">
                     <h3 className='text-[#F43F5E] font-bold text-2xl'>STEP 2</h3>
-                    <ul className='text-xl font-medium'>
+                    <ul data-aos="fade-up-left" className='text-xl font-medium'>
                         <li>Choose a username</li>
                         <li>Select your favourite Vape Monkey NFT</li>
                         <li>Place all your links you want to share!</li>
@@ -20,11 +20,11 @@ function Screen3() {
                 </div>
                 <div className="space-y-3">
                     <h3 className='text-[#F43F5E] font-bold text-2xl'>STEP 3</h3>
-                    <ul className='text-xl font-medium'>
+                    <ul data-aos="fade-up-left" className='text-xl font-medium'>
                         <li>Share your one link everywhere 🚀</li>
                     </ul>
                 </div>
-                <p className='text-[#9CA3AF] text-xl'>Perfect for social media bio or any other <br /> platform you connect with people.</p>
+                <p data-aos="fade-up-left" className='text-[#9CA3AF] text-xl'>Perfect for social media bio or any other <br /> platform you connect with people.</p>
                 <button className='py-[10px] pr-[30px] pl-[20px] border border-[#F43F5E]  text-2xl clip text-[#F43F5E]'>MINT NOW</button>
             </div>
         </div>

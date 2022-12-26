@@ -4,13 +4,13 @@ function Screen2() {
     return (
         <div className="screen2   px-[10%] py-[5%] mt-[300px] space-y-10">
             <div className="flex flex-col lg:flex-row justify-center lg:items-end gap-5">
-                <div className="w-full lg:w-2/3 space-y-5">
+                <div className="w-full lg:w-2/3 space-y-5" data-aos="fade-up-left">
                     <h2 className='text-4xl lg:text-5xl font-bold'>With Vape Monkey NFTs you unlock a <br />  free URL showcase</h2>
                     <p className='text-xl font-medium'>You not only get beautiful, unique artwork when you receive your Vape Monkey NFT NFT, but you also unlock a world of Web3 content. This is just one of the utilities included with Vape Monkey NFT NFTs.</p>
                     <p className='text-xl font-medium'>By owning a Vape Monkey NFT Ape NFT you immediately get a Vape Monkey NFT Profile, which is a collection of all your links in one place. It’s the ultimate PFP.</p>
 
                 </div>
-                <div className="w-full lg:w-1/3 space-y-5">
+                <div className="w-full lg:w-1/3 space-y-5" data-aos="fade-up-left">
                     <h2 className='text-4xl  font-bold'>Smart Contract Based on ERC721</h2>
                     <p className='text-xl font-medium'>Vape Monkey NFT Apes live in the Ethereum blockchain.</p>
                 </div>
