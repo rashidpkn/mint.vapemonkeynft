@@ -7,7 +7,7 @@ function Screen3() {
                 <div className="space-y-3">
                     <h3 className='text-[#F43F5E] font-bold text-2xl'>STEP 1</h3>
                     <ul data-aos="fade-up-left" className='text-xl font-medium'>
-                        <li>Get a Vape Monkey NFT Ape NFT</li>
+                        <li>Get a Vape Monkey NFT</li>
                     </ul>
                 </div>
                 <div className="space-y-3">
