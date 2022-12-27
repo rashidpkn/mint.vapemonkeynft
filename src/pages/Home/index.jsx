@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <Navbar />
-            <div className='bg-[#010001] text-white'>
+            <div className='bg-[#010001] text-white w-full overflow-hidden'>
                 <Screen1 />
                 <Screen2 />
                 <Screen3 />
