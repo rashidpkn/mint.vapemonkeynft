@@ -10,7 +10,7 @@
 
 
 .line{
-  animation: mint-line 10s linear  infinite ;
+  animation: mint-line 20s linear  infinite ;
   /* transform: translate3d(150px,0px,0px); */
 }
 

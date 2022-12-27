@@ -49,8 +49,8 @@ function Footer() {
 
 
 
-                    <div className=" w-full overflow-hidden fixed bottom-0 bg-white">
-                        <img src="/image/common/live-minting.svg" className='h-24 py-5 object-cover line max-w-none' alt="" />
+                    <div className=" w-full overflow-hidden fixed bottom-0 bg-white py-5">
+                        <img src="/image/common/live-minting.svg" className='h-10   object-cover line max-w-none' alt="" />
                     </div>
                 
 
