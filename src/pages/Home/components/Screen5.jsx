@@ -5,33 +5,33 @@ function Screen5() {
 
     const roadmap = [
         {
-            title: 'Mint on Ethereum',
-            desc: 'Minting will start on the 15th of April 2022. There are 1500 early access reserved spots. Being in the early access list means having a special discounted mint price.'
-        },
-        {
-            title: 'Reveal metadata and rarity',
-            desc: 'Vape Monkey NFTs are randomly generated, but some of them have rare traits. A few selected others are especially unique 1-on-1. After you mint, metadata will be revealed within a few minutes, and you will be able to see what traits you got and the rarity of your Vape Monkey NFT. Every new mint is a chance to win a rare special edition 1-on-1, they are distributed randomly throughout the collection.'
-        },
-        {
-            title: 'Scalable Vector Graphics - SVG',
-            desc: `An SVG will be generated for all Vape Monkey NFT holders. You will get access to high-quality assets for your Vape Monkey NFT. SVGs don't pixelate, you can scale and print in any size without losing quality. It's because we care, and each pixel has its place. You truly own a Vape Monkey NFT.`
-        },
-        {
-            title: 'Vape Monkey NFT Profile - Your Website',
-            desc: `Each owner will have its unique Vape Monkey NFT Profile, showing the traits and specialties. You will be able to claim the profile and make it your own, add your username to your Vape Monkey NFT, add socials, and use it as a collection of public links of your choice. This profile could be a single point of reference where all your content is linked. Share all your links in one place.`
-        },
-        {
-            title: 'Club Shop',
-            desc: 'One of the perks will be getting access to limited Vape Monkey NFT merchandise. Club members will always have discounted prices.'
-        },
-        {
-            title: 'Vape Monkey NFT Club - Social Network',
-            desc: 'Our goal is to build a platform based on Web 3.0 where Vape Monkey NFTs support other Vape Monkey NFTs, by providing video courses, articles, podcasts, discussions, or other exclusives for members only. Instead of likes, members reward each other with ETH. Imagine a crypto guru giving the community tips on when to buy and when to sell. Or other incredible Vape Monkey NFTs sharing their expertise with the rest of us. One for all, all for one'
-        },
-        {
-            title: 'Roadmap for Season 2',
-            desc: 'Because this is just the beginning... Being a Vape Monkey NFT owner will not only grant you everything we mentioned on the roadmap. But will ensure that you have access to all future drops and club-only exclusives.'
-        },
+            title: 'Initial Launch',
+            desc: '5,000 of the 10,000 Vape Monkey NFT are made available for sale to the public.'
+          },
+          {
+            title: 'Second Launch',
+            desc: 'The remaining 5,000 Vape Monkey NFT are made available for sale to the public - dutch auction style.'
+          },
+          {
+            title: 'Community Wallet',
+            desc: 'The community wallet will be used to reward all holders.'
+          },
+          {
+            title: 'The Sandbox',
+            desc: 'All  holders will be airdropped an Vape Monkey NFT Voxel for free.'
+          },
+          {
+            title: 'Vape Monkey NFT Social',
+            desc: 'We are social, follow us on twitter, discord,instagram and join our community.'
+          },
+          {
+            title: 'Public ICO',
+            desc: '$EGO Coin Launched. Our coin will act as the currency within our Play to Earn Game.'
+          },
+         {
+            title: 'Spend To Earn',
+            desc: 'By owing Vapemonkey use case nft to can radeem on vapemonkey websites.'
+         },
     ]
 
 

@@ -18,6 +18,7 @@ function Screen1() {
                     Connect
                 </button>
             </div>
+            
         </div>
     )
 }

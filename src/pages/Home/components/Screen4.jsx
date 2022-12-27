@@ -3,10 +3,8 @@ import React from 'react'
 function Screen4() {
 
     const nft = [
-        { image: '/image/nft/1.jpg', position: 'DESINER', name: 'Person 1' },
-        { image: '/image/nft/2.jpg', position: 'FOUNDER', name: 'Person 2' },
-        { image: '/image/nft/3.jpg', position: 'EARLY', name: 'Person 3' },
-        { image: '/image/nft/4.jpg', position: 'MANAGER', name: 'Person 4' },
+        { image: '/image/nft/1.jpg', position: 'CO-Founder & CEO', name: 'SM' },
+        { image: '/image/nft/2.jpg', position: 'CO-Founder & CEO', name: 'AF' },
     ]
 
 
