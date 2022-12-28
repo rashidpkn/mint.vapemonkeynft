@@ -13,7 +13,7 @@ function Screen1() {
                     <span className='text-5xl font-bold'>0.05</span>
                     <span className='text-5xl font-bold'>=</span>
                 </div>
-                <input type={'range'} min={1} max={5} value={count} onChange={e => { setCount(e.target.value) }} />
+                <input className='accent-[#F43F5E]' type={'range'} min={1} max={5} value={count} onChange={e => { setCount(e.target.value) }} />
                 <button className='py-[15px] pr-[45px] pl-[35px] border border-[#F43F5E]  text-2xl clip text-[#F43F5E]'>
                     Connect
                 </button>
