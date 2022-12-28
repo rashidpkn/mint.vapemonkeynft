@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
+import TermsAndPrivacyPolicy from "./pages/Terms_and_Privacy";
 
 
 const router = createBrowserRouter([
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
     {
         path: '/nft',
         element: 'nft'
+    },
+    {
+        path: '/terms-and-privacy',
+        element:<TermsAndPrivacyPolicy/>
     }
 ])
 

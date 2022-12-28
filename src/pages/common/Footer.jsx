@@ -27,13 +27,13 @@ function Footer() {
                         <h6>Licensing</h6>
                     </div>
                     <div className="flex gap-5 invert">
-                        <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://google.com' className="h-10 w-10 ">
+                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://google.com' className="h-10 w-10 ">
                             <InstagramLogo />
                         </a>
-                        <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://twitter.com/monkey_dubai' className="h-10 w-10 ">
+                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://twitter.com/monkey_dubai' className="h-10 w-10 ">
                             <TiwtterLogo />
                         </a>
-                        <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://discord.gg/NC3RXXh8' className="h-10 w-10 ">
+                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://discord.gg/NC3RXXh8' className="h-10 w-10 ">
                             <Discode />
                         </a>
                     </div>
