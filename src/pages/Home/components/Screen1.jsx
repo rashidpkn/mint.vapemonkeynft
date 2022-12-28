@@ -18,7 +18,7 @@ function Screen1() {
                     Connect
                 </button>
             </div>
-            <div className="hidden md:block absolute -top-36 rotate-[18deg] -right-28 h-full  z-0">
+            <div className="hidden md:block absolute -top-[4rem] rotate-[16deg] -right-[7rem] h-full  z-0">
                 <img src="/image/home/banner.png" className='h-full object-cover' alt="" />
             </div>
         </div>
