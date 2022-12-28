@@ -6,8 +6,8 @@ function Screen2() {
             <div className="flex flex-col lg:flex-row justify-center lg:items-end gap-5">
                 <div className="w-full lg:w-2/3 space-y-5" data-aos="fade-up-left">
                     <h2 className='text-4xl lg:text-5xl font-bold'>With Vape Monkey NFTs you unlock a <br />  free URL showcase</h2>
-                    <p className='text-xl font-medium'>You not only get beautiful, unique artwork when you receive your Vape Monkey NFT, but you also unlock a world of Web3 content. This is just one of the utilities included with Vape Monkey NFTs.</p>
-                    <p className='text-xl font-medium'>By owning a Vape Monkey NFT you immediately get a Vape Monkey NFT Profile, which is a collection of all your links in one place. It’s the ultimate PFP.</p>
+                    <p className='text-xl font-medium'>Vape Monkey NFTs are more than just collectibles - they have practical uses too! Display your NFT on social media, use as a unique avatar, or trade with other collectors.</p>
+                    <p className='text-xl font-medium'>Own a piece of digital history and show off your style with these must-have items. Start building your collection today!</p>
 
                 </div>
                 <div className="w-full lg:w-1/3 space-y-5" data-aos="fade-up-left">
