@@ -1,104 +1,54 @@
 import React from 'react'
 
-import { Link, useLocation } from 'react-router-dom'
 function Footer() {
     return (
         <>
-            <footer className='text-white bg-[#121212]'>
-                <div className="flex flex-col lg:flex-row   border-y border-[#333] divide-x divide-[#333]">
-                    <div className="px-3 md:px-0 w-full lg:w-1/2 h-[420px] flex flex-col justify-center items-center gap-3">
-                        <div className="flex flex-col gap-3">
-                            <h2 className='text-3xl md:text-5xl'>Stay Up To Date </h2>
-                            <h2 className='text-3xl md:text-5xl'>With Vapemonkeydubai.</h2>
-                            <p>Get the latest news and information about the Vapemonkeydubai NFT project.</p>
-                        </div>
-                        <div className="flex gap-3 justify-center flex-wrap">
-                            <div className="max-w-[432px] flex flex-col gap-3">
-                                <form action="">
-                                    <label htmlFor="email" >Email</label>
-                                    <input className='w-full h-[38px] bg-transparent outline-none border-b' id='email' type="text" />
-                                </form>
-                                <p>By submitting your email, you are agreeing to our Terms of Service  & Privacy Policy.</p>
-                            </div>
-                            <button className='w-[100px] h-[100px] rounded-full bg-[#ff0097] hover:h-[90px] hover:w-[90px] duration-200'>SEND IT</button>
-                        </div>
+            <footer className=' bg-black text-white  mb-20 border-t'>
+                <div className="px-3 md:px-0 w-full py-5 flex flex-col justify-center items-center gap-3">
+                    <div className="flex flex-col gap-3">
+                        <h2 className='text-3xl md:text-5xl'>Stay Up To Date </h2>
+                        <h2 className='text-3xl md:text-5xl'>With Vapemonkeydubai.</h2>
+                        <p>Get the latest news and information about the Vapemonkeydubai NFT project.</p>
                     </div>
-                    <div className="w-full lg:w-1/2 h-[420px] flex flex-col divide-y divide-[#333]">
-                        <Navigation />
-                        <div className="w-full h-[120px] flex items-center justify-center lg:justify-start gap-10 px-0 lg:px-10 ">
-                            <div className="flex flex-col">
-                                <span>Terms & Privacy Policy</span>
-                                <span>Licensing</span>
-                            </div>
-                            <div className="flex gap-5 invert">
-                                <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://google.com' className="h-10 w-10 ">
-                                    <InstagramLogo />
-                                </a>
-                                <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://twitter.com/monkey_dubai' className="h-10 w-10 ">
-                                    <TiwtterLogo />
-                                </a>
-                                <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://discord.gg/NC3RXXh8' className="h-10 w-10 ">
-                                    <Discode />
-                                </a>
-                            </div>
+                    <div className="flex gap-3 justify-center flex-wrap">
+                        <div className="max-w-[432px] flex flex-col gap-3">
+                            <form action="">
+                                <label htmlFor="email" >Email</label>
+                                <input className='w-full h-[38px] bg-transparent outline-none border-b' id='email' type="text" />
+                            </form>
+                            <p>By submitting your email, you are agreeing to our Terms of Service  & Privacy Policy.</p>
                         </div>
+                        <button className='w-[100px] h-[100px] rounded-full bg-[#ff0097] hover:h-[90px] hover:w-[90px] duration-200'>SEND IT</button>
+                    </div>
+                </div>
+                <div className="py-5 flex gap-10 px-0 lg:px-10 justify-end">
+                    <div className="">
+                        <h6>Terms & Privacy Policy</h6>
+                        <h6>Licensing</h6>
+                    </div>
+                    <div className="flex gap-5 invert">
+                        <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://google.com' className="h-10 w-10 ">
+                            <InstagramLogo />
+                        </a>
+                        <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://twitter.com/monkey_dubai' className="h-10 w-10 ">
+                            <TiwtterLogo />
+                        </a>
+                        <a title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://discord.gg/NC3RXXh8' className="h-10 w-10 ">
+                            <Discode />
+                        </a>
                     </div>
                 </div>
                 <CopyRight />
             </footer>
-
-
-
-                    <div className=" w-full overflow-hidden fixed bottom-0 bg-white py-5">
-                        <img src="/image/common/live-minting.svg" className='h-10   object-cover line max-w-none' alt="" />
-                    </div>
-                
-
-
-            
-                    {/* <marquee className='text-5xl font-bold h-24 bg-white text-black flex justify-center items-center sticky bottom-0' direction="right" loop='true' width="100%" scrollamount="20" >
-                        <ul className='space-x-5 list-disc'>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-                            <li className='inline-block'>LIVE MINTING</li>
-
-                        </ul>
-                    </marquee> */}
-            
-
+            <div className=" w-full overflow-hidden fixed bottom-0 bg-white py-5">
+                <img src="/image/common/live-minting.svg" className='h-10   object-cover line max-w-none' alt="" />
+            </div>
         </>
     )
 }
 
 export default Footer
 
-
-function Navigation() {
-    const { pathname } = useLocation()
-    return (
-        <div className="w-full h-[300px] flex flex-col p-[5%] text-sm ">
-            <h2 className='tracking-[.2rem]'>NAVIGATION</h2>
-            <ul className="flex flex-col flex-wrap w-1/2 h-3/4 text-4xl font-light gap-x-5">
-                <li className={`decoration-[#ff0097] ${pathname === '/' && 'line-through'} h-1/3 flex items-center`}><Link title='home' to={'/'}> Home </Link></li>
-                <li className={`decoration-[#ff0097] ${pathname === '/about' && 'line-through'} h-1/3 flex items-center`}><Link title='about' to={'/about'}> About </Link></li>
-                <li className={`decoration-[#ff0097] ${pathname === '/roadmaps' && 'line-through'} h-1/3 flex items-center cursor-pointer`}> Roadmaps </li>
-                {/* <li className={`decoration-[#ff0097] ${pathname === '/meta' && 'line-through'} h-1/3 flex items-center`}><Link title='metaverse' to={'/meta'}> Metaverse </Link></li> */}
-                <li className={`decoration-[#ff0097] ${pathname === '/contact' && 'line-through'} h-1/3 flex items-center`}><Link title='contact' to={'/contact'}> Contact </Link></li>
-                {/* <li className='h-1/3 flex items-center text-lg'><Link title='press and media kit' to={'/press'}> Press/Media Kit </Link></li> */}
-            </ul>
-        </div>
-    )
-}
 
 
 function CopyRight() {
