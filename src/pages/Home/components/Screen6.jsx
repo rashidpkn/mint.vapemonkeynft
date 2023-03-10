@@ -10,7 +10,7 @@ function Screen6() {
         },
         {
             question: 'When is the whitelist mint date?',
-            answer: '27th March. Stay up to date with this information by joining our Discord.'
+            answer: '10th April. Stay up to date with this information by joining our Discord.'
         },
         {
             question: 'What blockchain do you use?',

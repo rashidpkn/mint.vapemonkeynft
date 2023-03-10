@@ -6,11 +6,11 @@ function Screen5() {
     const roadmap = [
         {
             title: 'Whitelist',
-            desc: '50 of the 10,000 Vape Monkey NFT are made available for sale whitelist.'
+            desc: '50 of the 10,000 Vape Monkey NFT are made available for sale whitelis on 3rd April. '
           },
           {
             title: 'Public Launch',
-            desc: 'The remaining 9950  Vape Monkey NFT are made available for sale to the public - dutch auction style.'
+            desc: 'The remaining 9950  Vape Monkey NFT are made available for sale to the public on 10rd April.'
           },
           {
             title: 'New Location',
@@ -24,7 +24,7 @@ function Screen5() {
           
          {
             title: 'Spend To Save',
-            desc: 'By owing Vapemonkey use case NTF to radeem on vapemonkey websites.'
+            desc: 'By owing Vapemonkey use case NTF to radeem on vapemonkey websites globally.'
          },
     ]
 
