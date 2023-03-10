@@ -19,12 +19,12 @@ function Screen5() {
           
           {
             title: 'Vape Monkey NFT Social',
-            desc: 'We are social, follow us on twitter, discord,instagram and join our community.'
+            desc: 'We are social, follow us on Twitter, Discord, Instagram and join our community.'
           },
           
          {
             title: 'Spend To Save',
-            desc: 'By owing Vapemonkey use case nft to radeem on vapemonkey websites.'
+            desc: 'By owing Vapemonkey use case NTF to radeem on vapemonkey websites.'
          },
     ]
 
