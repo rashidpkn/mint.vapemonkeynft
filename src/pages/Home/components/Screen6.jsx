@@ -5,13 +5,13 @@ function Screen6() {
 
     const faq = [
         {
-            question: 'When is the public mint date?',
+            question: 'When is the whitelist mint date?',
             answer: '3rd April. Stay up to date with this information by joining our Discord.'
         },
-        {
-            question: 'When is the whitelist mint date?',
-            answer: '10th April. Stay up to date with this information by joining our Discord.'
-        },
+            {
+                question: 'When is the public mint date?',
+                answer: '10th April. Stay up to date with this information by joining our Discord.'
+            },
         {
             question: 'What blockchain do you use?',
             answer: 'All Vape Monkey NFTs on the Ethereum blockchain. (ERC721A Smart Contracts)'
