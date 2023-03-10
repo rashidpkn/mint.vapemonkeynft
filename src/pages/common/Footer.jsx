@@ -57,7 +57,7 @@ export default Footer
 function CopyRight() {
     return (
         <div className="flex justify-around items-center h-20">
-            <span>® 2022. Vapemonkeydubai. All Rights Reserved</span>
+            <span>® 2023. Vapemonkeydubai. All Rights Reserved</span>
             <span>Website by Vapemonkeydubai</span>
         </div>
     )
