@@ -5,32 +5,26 @@ function Screen5() {
 
     const roadmap = [
         {
-            title: 'Initial Launch',
-            desc: '5,000 of the 10,000 Vape Monkey NFT are made available for sale to the public.'
+            title: 'Whitelist',
+            desc: '50 of the 10,000 Vape Monkey NFT are made available for sale whitelist.'
           },
           {
-            title: 'Second Launch',
-            desc: 'The remaining 5,000 Vape Monkey NFT are made available for sale to the public - dutch auction style.'
+            title: 'Public Launch',
+            desc: 'The remaining 9950  Vape Monkey NFT are made available for sale to the public - dutch auction style.'
           },
           {
-            title: 'Community Wallet',
-            desc: 'The community wallet will be used to reward all holders.'
+            title: 'New Location',
+            desc: 'Launch in Thailand and Sri Lanka'
           },
-          {
-            title: 'The Sandbox',
-            desc: 'All  holders will be airdropped an Vape Monkey NFT Voxel for free.'
-          },
+          
           {
             title: 'Vape Monkey NFT Social',
             desc: 'We are social, follow us on twitter, discord,instagram and join our community.'
           },
-          {
-            title: 'Public ICO',
-            desc: '$EGO Coin Launched. Our coin will act as the currency within our Play to Earn Game.'
-          },
+          
          {
-            title: 'Spend To Earn',
-            desc: 'By owing Vapemonkey use case nft to can radeem on vapemonkey websites.'
+            title: 'Spend To Save',
+            desc: 'By owing Vapemonkey use case nft to radeem on vapemonkey websites.'
          },
     ]
 

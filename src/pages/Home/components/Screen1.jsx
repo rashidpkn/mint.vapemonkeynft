@@ -7,7 +7,7 @@ function Screen1() {
             <h1 data-aos="fade-up" className='text-4xl lg:text-6xl font-bold z-10'>Get your <br /> Vape Monkey NFT </h1>
             <p className='w-full lg:w-1/2 text-xl font-medium z-10'>
             Introducing Vape Monkey NFTs – the newest addition to our collection of digital art! These unique, one-of-a-kind items are perfect for collectors and vape enthusiasts alike.
-            Each NFT features a different Vape Monkey design,And gives a 5%,10%,15% or 20% discount.
+            Each NFT features a different Vape Monkey design, And gives a 5%,10%,15% or 20% discount.
             </p>
             <div className="absolute bottom-[-190px] inset-x-0 mx-auto bg-black lg:w-[650px] px-[50px] flex flex-col justify-center items-center gap-5">
                 <div className="w-[300px] lg:w-[400px] h-[150px] rounded-[140px] border-2 border-white flex-shrink-0 flex justify-center items-center gap-5">

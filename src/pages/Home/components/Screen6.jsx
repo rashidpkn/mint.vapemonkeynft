@@ -6,11 +6,11 @@ function Screen6() {
     const faq = [
         {
             question: 'When is the public mint date?',
-            answer: '7th januavry. Stay up to date with this information by joining our Discord.'
+            answer: '3rd april. Stay up to date with this information by joining our Discord.'
         },
         {
             question: 'When is the whitelist mint date?',
-            answer: '31st dec. Stay up to date with this information by joining our Discord.'
+            answer: '27th march. Stay up to date with this information by joining our Discord.'
         },
         {
             question: 'What blockchain do you use?',
@@ -18,7 +18,7 @@ function Screen6() {
         },
         {
             question: 'What is the mint price?',
-            answer: '0.05'
+            answer: '0.05 eth'
         },
         {
             question: 'How many whitelist spots will be available?',
