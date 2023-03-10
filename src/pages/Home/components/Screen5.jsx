@@ -14,7 +14,7 @@ function Screen5() {
           },
           {
             title: 'New Location',
-            desc: 'Launch in Thailand and Sri Lanka'
+            desc: 'Launch in Thailand and Sri Lanka.'
           },
           
           {
