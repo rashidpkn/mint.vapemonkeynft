@@ -2,27 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .clip {
-  clip-path: polygon(0 0, 85% 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
-  -webkit-clip-path: polygon(0 0, 85% 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    85% 0,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%
+  );
+  -webkit-clip-path: polygon(
+    0 0,
+    85% 0,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%
+  );
 }
 
-
-.line{
-  animation: mint-line 20s linear  infinite ;
+.line {
+  animation: mint-line 20s linear infinite;
   /* transform: translate3d(150px,0px,0px); */
 }
 
-
 @keyframes mint-line {
   0% {
-    transform: translate3d(0px,0px,0px);
+    transform: translate3d(0px, 0px, 0px);
   }
-  50%{
-    transform: translate3d(-300px,0px,0px);
+  50% {
+    transform: translate3d(-300px, 0px, 0px);
   }
-  100%{
-    transform: translate3d(0px,0px,0px);
+  100% {
+    transform: translate3d(0px, 0px, 0px);
   }
 }
