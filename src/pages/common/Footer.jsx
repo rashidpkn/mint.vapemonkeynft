@@ -2,32 +2,42 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Footer() {
-  return (
-    <>
-      <footer className=" bg-black text-white  mb-20 border-t">
-        <div className="px-3 md:px-0 w-full py-5 flex flex-col justify-center items-center gap-3">
-          <div className="flex flex-col gap-3">
-            <h2 className="text-3xl md:text-5xl">Stay Up To Date </h2>
-            <h2 className="text-3xl md:text-5xl">With Vapemonkeydubai.</h2>
-            <p>
-              Get the latest news and information about the Vapemonkeydubai NFT
-              project.
-            </p>
-          </div>
-          <div className="flex gap-3 justify-center flex-wrap">
-            <div className="max-w-[432px] flex flex-col gap-3">
-              <form action="">
-                <label htmlFor="email">Email</label>
-                <input
-                  className="w-full h-[38px] bg-transparent outline-none border-b"
-                  id="email"
-                  type="text"
-                />
-              </form>
-              <p>
-                By submitting your email, you are agreeing to our Terms of
-                Service & Privacy Policy.
-              </p>
+    return (
+        <>
+            <footer className=' bg-black text-white  mb-20 border-t'>
+                <div className="px-3 md:px-0 w-full py-5 flex flex-col justify-center items-center gap-3">
+                    <div className="flex flex-col gap-3">
+                        <h2 className='text-3xl md:text-5xl'>Stay Up To Date <br /> With Vapemonkeydubai.</h2>
+                        <p className='text-justify'>Get the latest news and information about the Vapemonkeydubai NFT project.</p>
+                    </div>
+                    <div className="flex gap-3 justify-center flex-wrap">
+                        
+                        <button className='w-[100px] h-[100px] rounded-full bg-[#ff0097] hover:h-[90px] hover:w-[90px] duration-200'>SEND IT</button>
+                    </div>
+                </div>
+                <div className="py-5 flex gap-10 px-0 lg:px-10 justify-end">
+                    <div className="">
+                        <Link to={'/terms-and-privacy'}>
+                            <h6>Terms & Privacy Policy</h6>
+                        </Link>
+                        <h6>Licensing</h6>
+                    </div>
+                    <div className="flex gap-5 invert">
+                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://google.com' className="h-10 w-10 ">
+                            <InstagramLogo />
+                        </a>
+                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://twitter.com/monkey_dubai' className="h-10 w-10 ">
+                            <TiwtterLogo />
+                        </a>
+                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://discord.gg/NC3RXXh8' className="h-10 w-10 ">
+                            <Discode />
+                        </a>
+                    </div>
+                </div>
+                <CopyRight />
+            </footer>
+            <div className=" w-full overflow-hidden fixed bottom-0 bg-white py-5">
+                <img src="/image/common/live-minting.svg" className='h-10   object-cover line max-w-none' alt="" />
             </div>
             <button className="w-[100px] h-[100px] rounded-full bg-[#ff0097] hover:h-[90px] hover:w-[90px] duration-200">
               SEND IT
@@ -90,12 +100,12 @@ function Footer() {
 export default Footer
 
 function CopyRight() {
-  return (
-    <div className="flex justify-around items-center h-20">
-      <span>® 2022. Vapemonkeydubai. All Rights Reserved</span>
-      <span>Website by Vapemonkeydubai</span>
-    </div>
-  )
+    return (
+        <div className="flex justify-around items-center h-20">
+            <span>® 2023. Vapemonkeydubai. All Rights Reserved</span>
+            <span>Website by Vapemonkeydubai</span>
+        </div>
+    )
 }
 
 export function InstagramLogo() {

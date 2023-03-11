@@ -27,21 +27,38 @@ function Screen6() {
     },
   ]
 
-  return (
-    <div className="screen4 px-[10%] py-[5%] lg:px-0  space-y-5">
-      <h3 className="text-4xl lg:text-6xl font-bold text-center">FAQ</h3>
-      <div className="w-full flex flex-col items-end justify-center py-[5%] divide-y ">
-        {faq.map((e, index) => (
-          <FAQ
-            key={index}
-            index={index + 1}
-            question={e.question}
-            answer={e.answer}
-          />
-        ))}
-      </div>
-    </div>
-  )
+    const faq = [
+        {
+            question: 'When is the whitelist mint date?',
+            answer: '3rd April. Stay up to date with this information by joining our Discord.'
+        },
+        {
+            question: 'When is the public mint date?',
+            answer: '10th April. Stay up to date with this information by joining our Discord.'
+        },
+        {
+            question: 'What blockchain do you use?',
+            answer: 'All Vape Monkey NFTs on the Ethereum blockchain. (ERC721A Smart Contracts)'
+        },
+        {
+            question: 'What is the mint price?',
+            answer: '0.05 ETH'
+        },
+        {
+            question: 'How many whitelist spots will be available?',
+            answer: 'We will have a total of 50 whitelist spots available.'
+        },
+    ]
+
+
+    return (
+        <div className="screen4 px-[10%] py-[5%] lg:px-0  space-y-5">
+            <h3 className='text-4xl lg:text-6xl font-bold text-center'>FAQ</h3>
+            <div className="w-full flex flex-col items-end justify-center py-[5%] divide-y ">
+                {faq.map((e, index) => <FAQ key={index} index={index + 1} question={e.question} answer={e.answer} />)}
+            </div>
+        </div>
+    )
 }
 
 export default Screen6

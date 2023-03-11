@@ -31,22 +31,40 @@ function Screen5() {
       desc: 'By owing Vapemonkey use case nft to can radeem on vapemonkey websites.',
     },
   ]
+    const roadmap = [
+        {
+            title: 'Whitelist',
+            desc: '50 of the 10,000 Vape Monkey NFT are made available for sale whitelis on 3rd April. '
+          },
+          {
+            title: 'Public Launch',
+            desc: 'The remaining 9950  Vape Monkey NFT are made available for sale to the public on 10rd April.'
+          },
+          {
+            title: 'New Location',
+            desc: 'Launch in Thailand and Sri Lanka.'
+          },
+          
+          {
+            title: 'Vape Monkey NFT Social',
+            desc: 'We are social, follow us on Twitter, Discord, Instagram and join our community.'
+          },
+          
+         {
+            title: 'Spend To Save',
+            desc: 'By owing Vapemonkey use case NTF to radeem on vapemonkey websites globally.'
+         },
+    ]
 
-  return (
-    <div className="screen4 px-[10%] py-[5%] lg:px-0  space-y-5">
-      <h3 className="text-4xl lg:text-6xl font-bold text-center">Roadmap</h3>
-      <div className="w-full flex flex-col items-end justify-center py-[5%] divide-y ">
-        {roadmap.map((e, index) => (
-          <RoadMap
-            key={index}
-            index={index + 1}
-            title={e.title}
-            desc={e.desc}
-          />
-        ))}
-      </div>
-    </div>
-  )
+
+    return (
+        <div className="screen4 px-[10%] py-[5%] lg:px-0  space-y-5">
+            <h3 className='text-4xl lg:text-6xl font-bold text-center'>Roadmap</h3>
+            <div className="w-full flex flex-col items-end justify-center py-[5%] divide-y ">
+                {roadmap.map((e, index) => <RoadMap key={index} index={index + 1} title={e.title} desc={e.desc} />)}
+            </div>
+        </div>
+    )
 }
 
 export default Screen5
