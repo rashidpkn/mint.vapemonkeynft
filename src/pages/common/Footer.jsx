@@ -1,60 +1,62 @@
+
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <>
-            <footer className=' bg-black text-white  mb-20 border-t'>
-                <div className="px-3 md:px-0 w-full py-5 flex flex-col justify-center items-center gap-3">
-                    <div className="flex flex-col gap-3">
-                        <h2 className='text-3xl md:text-5xl'>Stay Up To Date <br /> With Vapemonkeydubai.</h2>
-                        <p className='text-justify'>Get the latest news and information about the Vapemonkeydubai NFT project.</p>
-                    </div>
-                    <div className="flex gap-3 justify-center flex-wrap">
-                        
-                        <button className='w-[100px] h-[100px] rounded-full bg-[#ff0097] hover:h-[90px] hover:w-[90px] duration-200'>SEND IT</button>
-                    </div>
-                </div>
-                <div className="py-5 flex gap-10 px-0 lg:px-10 justify-end">
-                    <div className="">
-                        <Link to={'/terms-and-privacy'}>
-                            <h6>Terms & Privacy Policy</h6>
-                        </Link>
-                        <h6>Licensing</h6>
-                    </div>
-                    <div className="flex gap-5 invert">
-                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://google.com' className="h-10 w-10 ">
-                            <InstagramLogo />
-                        </a>
-                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://twitter.com/monkey_dubai' className="h-10 w-10 ">
-                            <TiwtterLogo />
-                        </a>
-                        <a rel='noreferrer' title='Social Media Links' aria-label='social Media links' target={'_blank'} href='https://discord.gg/NC3RXXh8' className="h-10 w-10 ">
-                            <Discode />
-                        </a>
-                    </div>
-                </div>
-                <CopyRight />
-            </footer>
-            <div className=" w-full overflow-hidden fixed bottom-0 bg-white py-5">
-                <img src="/image/common/live-minting.svg" className='h-10   object-cover line max-w-none' alt="" />
+        <footer className="bg-black px-[5%] text-white py-5" >
+            <div className="flex w-full flex-col items-center justify-center gap-5 py-10">
+                <p className="text-center text-3xl font-semibold md:text-5xl">
+                    Stay Up To Date <br className="hidden md:block" />
+                    With Vape Monkey Dubai
+                </p>
+                <p className="text-lg font-medium md:text-2xl">Joint our discount channel</p>
+                <a href='https://discord.gg/NC3RXXh8'>
+                 <button className="rounded-full bg-[#ff0097] px-6 py-3 text-2xl font-medium flex  gap-3 items-center"> <div className="h-8 w-8"> <Discode /></div> JOIN</button>
+                </a>
             </div>
-        </>
+            <div className="flex flex-col items-center gap-5 py-5 lg:flex-row lg:items-center lg:justify-end">
+
+                <p className="text-center lg:text-start">
+                    Terms & Privacy Policy <br />
+                    Licencing
+                </p>
+
+                <div className="flex gap-5">
+
+                    <a href="https://twitter.com/monkey_dubai">
+                        <div className="h-10 w-10 rounded-full bg-white border">
+                            <InstagramLogo />
+                        </div>
+                    </a>
+
+                    <a href="https://google.com">
+                        <div className="h-10 w-10 rounded-full bg-white border">
+                            <TiwtterLogo />
+                        </div>
+                    </a>
+
+                    <a href='https://discord.gg/NC3RXXh8'>
+                        <div className="h-10 w-10 rounded-full bg-white border">
+                            <Discode />
+                        </div>
+                    </a>
+
+
+                </div>
+
+            </div>
+            <div className="py-5 flex flex-col md:flex-row justify-between items-center gap-5 text-center">
+                <p> © 2023. Vape Monkey Dubai. All Right Reserved </p>
+                <p>Website by Vape Monkey Dubai</p>
+            </div>
+        </footer>
+
     )
 }
 
 export default Footer
 
 
-
-function CopyRight() {
-    return (
-        <div className="flex justify-around items-center h-20">
-            <span>® 2023. Vapemonkeydubai. All Rights Reserved</span>
-            <span>Website by Vapemonkeydubai</span>
-        </div>
-    )
-}
 
 export function InstagramLogo() {
     return (

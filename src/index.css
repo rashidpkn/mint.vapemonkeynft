@@ -26,3 +26,10 @@
     transform: translate3d(0px,0px,0px);
   }
 }
+
+
+footer{
+  background: url("./asset/image/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
