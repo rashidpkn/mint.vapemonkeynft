@@ -1,31 +1,7 @@
 import React, { useState } from 'react'
 
 function Screen6() {
-  const faq = [
-    {
-      question: 'When is the public mint date?',
-      answer:
-        '7th januavry. Stay up to date with this information by joining our Discord.',
-    },
-    {
-      question: 'When is the whitelist mint date?',
-      answer:
-        '31st dec. Stay up to date with this information by joining our Discord.',
-    },
-    {
-      question: 'What blockchain do you use?',
-      answer:
-        'All Vape Monkey NFTs on the Ethereum blockchain. (ERC721A Smart Contracts)',
-    },
-    {
-      question: 'What is the mint price?',
-      answer: '0.05',
-    },
-    {
-      question: 'How many whitelist spots will be available?',
-      answer: 'We will have a total of 50 whitelist spots available.',
-    },
-  ]
+  
 
     const faq = [
         {
