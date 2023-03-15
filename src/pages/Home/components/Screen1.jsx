@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { mintNFT } from '../../../utils/interact'
 
 function Screen1() {
     const [count, setCount] = useState(1)
@@ -25,7 +26,32 @@ function Screen1() {
                 <img src="/image/home/banner.png" className='h-full object-cover' alt="" />
             </div>
         </div>
-    )
+        <input
+          className="accent-[#F43F5E]"
+          type={'range'}
+          min={1}
+          max={5}
+          value={count}
+          onChange={(e) => {
+            setCount(e.target.value)
+          }}
+        />
+        <button
+          className="py-[15px] pr-[45px] pl-[35px] border border-[#F43F5E]  text-2xl clip text-[#F43F5E]"
+          onClick={() => mintNFT(count)}
+        >
+          Connect
+        </button>
+      </div>
+      <div className="hidden md:block absolute -top-[4rem] rotate-[16deg] -right-[7rem] h-full  z-0">
+        <img
+          src="/image/home/banner.png"
+          className="h-full object-cover"
+          alt=""
+        />
+      </div>
+    </div>
+  )
 }
 
 export default Screen1

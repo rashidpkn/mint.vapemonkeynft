@@ -1,9 +1,8 @@
-import Aos from 'aos';
+import Aos from 'aos'
 
 import { RouterProvider } from 'react-router-dom'
-import router from './router';
-import 'aos/dist/aos.css';
-
+import router from './router'
+import 'aos/dist/aos.css'
 
 function App() {
   Aos.init()
@@ -11,9 +10,8 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router} />
-
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
