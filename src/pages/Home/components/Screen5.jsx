@@ -34,11 +34,11 @@ function Screen5() {
     const roadmap = [
         {
             title: 'Whitelist',
-            desc: '50 of the 10,000 Vape Monkey NFT are made available for sale whitelis on 3rd April. '
+            desc: '50 of the 10,000 Vape Monkey NFT are made available for sale whitelis on 3rd April 2023. '
           },
           {
             title: 'Public Launch',
-            desc: 'The remaining 9950  Vape Monkey NFT are made available for sale to the public on 10rd April.'
+            desc: 'The remaining 9950  Vape Monkey NFT are made available for sale to the public on 10rd April 2023.'
           },
           {
             title: 'New Location',
@@ -47,7 +47,7 @@ function Screen5() {
           
           {
             title: 'Vape Monkey NFT Social',
-            desc: 'We are social, follow us on Twitter, Discord, Instagram and join our community.'
+            desc: <>We are social, follow us on <a href="https://twitter.com/monkey_dubai">Twitter</a>, <a href='https://discord.gg/NC3RXXh8'>Discord</a>,  <a href="https://google.com"> Instagram </a> and join our community.</>
           },
           
          {
