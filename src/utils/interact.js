@@ -6,6 +6,7 @@ const web3 = createAlchemyWeb3(alchemyKey)
 
 export const connectWallet = async () => {
   if (window.ethereum) {
+    console.log('attempting to connect wallet')
     try {
       const addressArray = await window.ethereum.request({
         method: 'eth_requestAccounts',
@@ -14,8 +15,10 @@ export const connectWallet = async () => {
         status: '👆🏽 Write a message in the text-field above.',
         address: addressArray[0],
       }
+
       return obj
     } catch (err) {
+      console.log(err)
       return {
         address: '',
         status: '😥 ' + err.message,
@@ -83,6 +86,12 @@ export const getCurrentWalletConnected = async () => {
 }
 
 export const mintNFT = async (count) => {
+  const { address } = await getCurrentWalletConnected()
+
+  if (address === '') {
+    await connectWallet()
+  }
+
   console.log(count)
   window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();//set up your Ethereum transaction
 
