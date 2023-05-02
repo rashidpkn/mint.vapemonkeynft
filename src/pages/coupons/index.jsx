@@ -14,7 +14,7 @@ function Coupons() {
       <Navbar />
       <div className="bg-[#010001] text-white w-full overflow-hidden">
         <Screen1 />
-        {/* <Screen2 /> */}
+        <Screen2 />
         {/* <Screen3 />
         <Screen4 />
         <Screen5 />
