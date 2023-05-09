@@ -93,7 +93,7 @@ export const mintNFT = async (count) => {
   }
 
   console.log(count)
-  window.contract = await new web3.eth.Contract(contractABI, contractAddress) //loadContract();//set up your Ethereum transaction
+  window.contract = new web3.eth.Contract(contractABI, contractAddress) //loadContract();//set up your Ethereum transaction
 
   let value = null
 
@@ -136,4 +136,70 @@ export const mintNFT = async (count) => {
       status: '😥 Something went wrong: ' + error.message,
     }
   }
+}
+
+const getNFTsOwned = async (address) => {
+  const url = alchemyKey + '/getNFTs/?owner=' + address
+  var requestOptions = {
+    method: 'get',
+    redirect: 'follow',
+  }
+
+  const nfts = await fetch(url, requestOptions).then((response) =>
+    response.json(),
+  )
+
+  console.log(nfts.ownedNfts)
+
+  const vmNfts = nfts.ownedNfts
+    .filter(
+      (e) =>
+        e.contract.address === '0x94e0f396cc57bb5614f4fccea2b13b76dc720409',
+    )
+    .map((e) => {
+      const id = parseInt(e.id.tokenId, 16)
+      const metadata = e.metadata
+      const { name, attributes } = metadata
+      const discount = attributes[16].value
+
+      return {
+        id,
+        name,
+        discount,
+      }
+    })
+
+  console.log(vmNfts)
+
+  return vmNfts
+}
+
+export const getCouponCodes = async (address) => {
+  console.log('fetching coupon codes')
+  const nfts = await getNFTsOwned(address)
+
+  const couponCodes = nfts.map((nft) => {
+    const { id, name, discount } = nft
+
+    let prefix
+
+    if (discount === '5%') {
+      prefix = 'a'
+    } else if (discount === '10%') {
+      prefix = 'b'
+    } else if (discount === '15%') {
+      prefix = 'c'
+    } else if (discount === '20%') {
+      prefix = 'd'
+    }
+
+    const code = prefix + 'XXXX' + id.toString()
+
+    return {
+      code,
+      discount,
+    }
+  })
+
+  return couponCodes
 }

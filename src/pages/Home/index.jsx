@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import Footer from '../common/Footer'
 import Navbar from '../common/Navbar'
 import Screen1 from './components/Screen1'
@@ -9,9 +10,14 @@ import Screen5 from './components/Screen5'
 import Screen6 from './components/Screen6'
 
 function Home() {
+  const [walletAddress, setWalletAddress] = useState('')
+
   return (
     <>
-      <Navbar />
+      <Navbar
+        walletAddress={walletAddress}
+        setWalletAddress={setWalletAddress}
+      />
       <div className="bg-[#010001] text-white w-full overflow-hidden">
         <Screen1 />
         <Screen2 />
