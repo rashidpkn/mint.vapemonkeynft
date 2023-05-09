@@ -1,6 +1,6 @@
 import { contractABI, contractAddress } from './contract'
 const alchemyKey =
-  'https://eth-goerli.g.alchemy.com/v2/RWbPb6Dvk_V3X_VKgG04wbbDxuCrTZgp'
+  'https://eth-mainnet.g.alchemy.com/v2/OxMgQ2cm0PfebhZljLPV9GuTtyNGsHFA'
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
 const web3 = createAlchemyWeb3(alchemyKey)
 

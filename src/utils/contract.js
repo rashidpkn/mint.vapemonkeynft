@@ -1,4 +1,4 @@
-const contractAddress = '0xAe880D754f93E66666505270262f8B60598793aC'
+const contractAddress = '0x94e0f396cC57bb5614f4FCcea2b13B76Dc720409'
 const contractABI = [
   {
     inputs: [],
@@ -215,7 +215,33 @@ const contractABI = [
   },
   {
     inputs: [],
+    name: 'MAX_WHITELIST_SUPPLY',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
     name: 'PRICE',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'WL_PRICE',
     outputs: [
       {
         internalType: 'uint256',
@@ -309,6 +335,19 @@ const contractABI = [
     type: 'function',
   },
   {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '_quantity',
+        type: 'uint256',
+      },
+    ],
+    name: 'giveawayMint',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
     inputs: [],
     name: 'giveawaySupply',
     outputs: [
@@ -346,19 +385,6 @@ const contractABI = [
     type: 'function',
   },
   {
-    inputs: [],
-    name: 'isRevealed',
-    outputs: [
-      {
-        internalType: 'bool',
-        name: '',
-        type: 'bool',
-      },
-    ],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
     inputs: [
       {
         internalType: 'uint256',
@@ -367,24 +393,6 @@ const contractABI = [
       },
     ],
     name: 'mint',
-    outputs: [],
-    stateMutability: 'payable',
-    type: 'function',
-  },
-  {
-    inputs: [
-      {
-        internalType: 'uint256',
-        name: '_quantity',
-        type: 'uint256',
-      },
-      {
-        internalType: 'address',
-        name: 'recepient',
-        type: 'address',
-      },
-    ],
-    name: 'mintGiveaway',
     outputs: [],
     stateMutability: 'payable',
     type: 'function',
@@ -597,7 +605,7 @@ const contractABI = [
   },
   {
     inputs: [],
-    name: 'toggleReveal',
+    name: 'toggleWhitelistSale',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',
@@ -721,6 +729,45 @@ const contractABI = [
         internalType: 'uint256[]',
         name: '',
         type: 'uint256[]',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'uint256',
+        name: '_quantity',
+        type: 'uint256',
+      },
+    ],
+    name: 'whitelistMint',
+    outputs: [],
+    stateMutability: 'payable',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'whitelistSale',
+    outputs: [
+      {
+        internalType: 'bool',
+        name: '',
+        type: 'bool',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'whitelistSupply',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
       },
     ],
     stateMutability: 'view',
