@@ -4,14 +4,14 @@ import ScrollToTop from './ScrollToTop'
 import { connectWallet } from '../../utils/interact'
 import { useState } from 'react'
 
-function Navbar() {
-  const [text, setText] = useState('Connect')
+function Navbar(props) {
+  const { walletAddress, setWalletAddress } = props
 
   const onClickHandler = async () => {
     const { address } = await connectWallet()
 
     if (address) {
-      setText(address)
+      setWalletAddress(address)
     }
   }
 
@@ -23,16 +23,17 @@ function Navbar() {
           <img src="/image/common/logo.png" width={200} alt="" />
         </Link>
         <div className="flex items-center gap-5">
-
-        <button
-          className="py-[10px] pr-[30px] pl-[20px] border border-[#F43F5E]  text-xl clip text-[#F43F5E] bg-black"
-          onClick={onClickHandler}
-        >
-          {text}
-        </button>
-        <Link to={'/coupons'}>
-          <button className="py-[10px] pr-[30px] pl-[20px] border border-[#F43F5E]  text-xl clip text-[#F43F5E] bg-black">Coupons</button>
-        </Link>
+          <button
+            className="py-[10px] pr-[30px] pl-[20px] border border-[#F43F5E]  text-xl clip text-[#F43F5E] bg-black"
+            onClick={onClickHandler}
+          >
+            {walletAddress === '' ? 'Connect Wallet' : walletAddress}
+          </button>
+          <Link to={'/coupons'}>
+            <button className="py-[10px] pr-[30px] pl-[20px] border border-[#F43F5E]  text-xl clip text-[#F43F5E] bg-black">
+              Coupons
+            </button>
+          </Link>
         </div>
       </nav>
     </>
