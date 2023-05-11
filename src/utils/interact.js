@@ -174,6 +174,20 @@ const getNFTsOwned = async (address) => {
   return vmNfts
 }
 
+function makeid(length) {
+  let result = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  let counter = 0;
+  while (counter < length) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    counter += 1;
+  }
+  return result;
+}
+
+
+
 export const getCouponCodes = async (address) => {
   console.log('fetching coupon codes')
   const nfts = await getNFTsOwned(address)
@@ -193,7 +207,7 @@ export const getCouponCodes = async (address) => {
       prefix = 'd'
     }
 
-    const code = prefix + 'XXXX' + id.toString()
+    const code = prefix + makeid(4) + id.toString()
 
     return {
       code,
