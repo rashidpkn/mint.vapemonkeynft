@@ -46,7 +46,7 @@ function LoginScreen({ setLoginScreen,coupons ,setCoupons}) {
             <form className="w-full max-w-[400px] bg-white rounded-lg text-black p-5 space-y-5" onSubmit={e=>{e.preventDefault();formSubmit()}}>
                 <div className="flex justify-between items-center">
                     <p> {status === 'signUp' ? 'Sign Up' : 'Login'}</p>
-                    <div className="w-6 h-6 bg-black cursor-pointer" onClick={() => setLoginScreen(false)}></div>
+                    <div className="w-6 h-6 cursor-pointer" onClick={() => setLoginScreen(false)}>x</div>
                 </div>
                 {status === 'signUp' && <div className="space-y-2">
                     <label htmlFor="">First Name</label>

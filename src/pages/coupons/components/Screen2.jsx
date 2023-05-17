@@ -11,6 +11,7 @@ function Screen2(props) {
   const [coupons, setCoupons] = useState([])
   const {email , loginStatus} = useSelector(state=>state.user)
   useEffect(() => {
+    if (walletAddress === '') return
 
     if(loginStatus && email){
       api.get('coupon/'+email).then(res=>{
@@ -25,20 +26,11 @@ function Screen2(props) {
         setCoupons(coupon)
     })
     }else{
-      setCoupons([
-        {
-          code: 'fXXXX9',
-          prefix:'f',
-          id:'9',
-          discount: '50%',
-        },
-      ])
+      getCouponCodes(walletAddress).then((res) => setCoupons(res))
     }
     
 
-    // if (walletAddress === '') return
 
-    // getCouponCodes(walletAddress).then((res) => setCoupons(res))
     
   }, [walletAddress,loginStatus])
 
