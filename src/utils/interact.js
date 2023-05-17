@@ -211,7 +211,10 @@ export const getCouponCodes = async (address) => {
 
     return {
       code,
+      prefix,
+      id,
       discount,
+
     }
   })
 

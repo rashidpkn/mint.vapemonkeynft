@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop'
 import { connectWallet } from '../../utils/interact'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setUser } from '../../redux/slice/userSlice'
 
 function Navbar(props) {
   const { walletAddress, setWalletAddress } = props
-
+const dispatch = useDispatch()
   const onClickHandler = async () => {
     const { address } = await connectWallet()
-
     if (address) {
+      dispatch(setUser({key:'wallet_address',value:address}))
       setWalletAddress(address)
     }
   }
