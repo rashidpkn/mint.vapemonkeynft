@@ -5,12 +5,8 @@ function Screen6() {
 
     const faq = [
         {
-            question: 'When is the whitelist mint date?',
-            answer: <>1st May 2023. Stay up to date with this information by joining our   <a href='https://discord.gg/NC3RXXh8'>Discord</a>. </>
-        },
-        {
             question: 'When is the public mint date?',
-            answer: <>8th May 2023. Stay up to date with this information by joining our <a href='https://discord.gg/NC3RXXh8'>Discord</a>.</>
+            answer: <>1st June 2023. Stay up to date with this information by joining our <a href='https://discord.gg/NC3RXXh8'>Discord</a>.</>
         },
         {
             question: 'What blockchain do you use?',
@@ -19,10 +15,6 @@ function Screen6() {
         {
             question: 'What is the mint price?',
             answer: '0.05 ETH'
-        },
-        {
-            question: 'How many whitelist spots will be available?',
-            answer: 'We will have a total of 50 whitelist spots available.'
         },
     ]
 

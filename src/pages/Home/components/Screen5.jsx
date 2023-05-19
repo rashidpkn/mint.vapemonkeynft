@@ -3,13 +3,9 @@ import React, { useState } from 'react'
 function Screen5() {
   
     const roadmap = [
-        {
-            title: 'Whitelist',
-            desc: "50 of the 10,000 Vape Monkey NFT's are made available for sale whitelis on 1st May 2023. "
-          },
           {
             title: 'Public Launch',
-            desc: "The remaining 9950  Vape Monkey NFT's are made available for sale to the public on 8th May 2023."
+            desc: "The remaining 9950  Vape Monkey NFT's are made available for sale to the public on 1st June 2023."
           },
           {
             title: 'New Locations',
