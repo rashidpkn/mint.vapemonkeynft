@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { mintNFT } from '../../../utils/interact'
-import Countdown from 'react-countdown'
+// import Countdown from 'react-countdown'
 
 function Screen1() {
   const [count, setCount] = useState(1)
   return (
     <div className="screen1 h-[600px] px-[5%] flex justify-center  flex-col gap-10 lg:border-b relative">
-      <div data-aos="fade-up" className="z-10 mt-[4rem]">
+      {/* <div data-aos="fade-up" className="z-10 mt-[4rem]">
         <Countdown date={new Date("1 June, 2023")} renderer={renderer} />
-      </div>
+      </div> */}
       <h1 data-aos="fade-up" className="text-4xl lg:text-6xl font-bold z-10">
         Get your <br /> Vape Monkey NFT{' '}
       </h1>
@@ -57,28 +57,3 @@ function Screen1() {
 export default Screen1
 
 
-const renderer = ({ days, hours, minutes, seconds, }) => {
-  return (
-    <div className="max-w-fit space-y-3">
-    <p className='font-medium text-center text-2xl'>WE WILL LAUNCH IN...</p>
-    <div className="flex gap-[0.12rem]">
-      <div className="space-y-[0.12rem]">
-        <div className="w-28 h-28 bg-[#fc4d77] flex justify-center items-center text-6xl font-medium">{days}</div>
-        <div className="w-28 h-8 bg-[#7d1434] flex justify-center items-center font-medium">DAYS</div>
-      </div>
-      <div className="space-y-[0.12rem]">
-        <div className="w-28 h-28 bg-[#1cabd0] flex justify-center items-center text-6xl font-medium">{hours}</div>
-        <div className="w-28 h-8 bg-[#084763] flex justify-center items-center font-medium">HOURS</div>
-      </div>
-      <div className="space-y-[0.12rem]">
-        <div className="w-28 h-28 bg-[#1cabd0] flex justify-center items-center text-6xl font-medium">{minutes}</div>
-        <div className="w-28 h-8 bg-[#084763] flex justify-center items-center font-medium">MINUTES</div>
-      </div>
-      <div className="space-y-[0.12rem]">
-        <div className="w-28 h-28 bg-[#1cabd0] flex justify-center items-center text-6xl font-medium">{seconds}</div>
-        <div className="w-28 h-8 bg-[#084763] flex justify-center items-center font-medium">SECONDS</div>
-      </div>
-    </div>
-    </div>
-  );
-};
