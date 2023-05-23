@@ -5,21 +5,21 @@ import Countdown from 'react-countdown'
 function Screen1() {
   const [count, setCount] = useState(1)
   return (
-    <div className="screen1 h-[600px] px-[10%] flex justify-center  flex-col gap-10 lg:border-b relative">
-      <p data-aos="fade-up" className="text-4xl lg:text-6xl font-bold z-10 mt-10">
+    <div className="screen1 h-[600px] px-[5%] flex justify-center  flex-col gap-10 lg:border-b relative">
+      <div data-aos="fade-up" className="z-10 mt-[4rem]">
         <Countdown date={new Date("1 June, 2023")} renderer={renderer} />
-      </p>
+      </div>
       <h1 data-aos="fade-up" className="text-4xl lg:text-6xl font-bold z-10">
         Get your <br /> Vape Monkey NFT{' '}
       </h1>
-      <p className="w-full lg:w-1/2 text-xl font-medium z-10">
+      <p className="w-full lg:w-3/4 text-lg font-medium z-10">
         Introducing Vape Monkey NFTs – the newest addition to our collection of
         digital art! These unique, one-of-a-kind items are perfect for
         collectors and vape enthusiasts alike. Each NFT features a different
         Vape Monkey design, And gives a 5%,10%,15% or 20% discount.
       </p>
       <div className="absolute bottom-[-190px] inset-x-0 mx-auto bg-black lg:w-[650px] px-[50px] flex flex-col justify-center items-center gap-5">
-        <div className="w-[300px] lg:w-[400px] h-[150px] rounded-[140px] border-2 border-white flex-shrink-0 flex justify-center items-center gap-5">
+        <div className="w-[300px] lg:w-[350px] h-[120px] rounded-[140px] border-2 border-white flex-shrink-0 flex justify-center items-center gap-5">
           <span className="text-6xl font-bold">{count}</span>
           <span className="text-2xl font-bold">x</span>
           {/* <span className="text-5xl font-bold">0.025</span> */}
@@ -57,10 +57,28 @@ function Screen1() {
 export default Screen1
 
 
-const renderer = ({days,hours, minutes, seconds, }) => {
-    return (
-      <span>
-        {days}:{hours}:{minutes}:{seconds}
-      </span>
-    );
+const renderer = ({ days, hours, minutes, seconds, }) => {
+  return (
+    <div className="max-w-fit space-y-3">
+    <p className='font-medium text-center text-2xl'>WE WILL LAUNCH IN...</p>
+    <div className="flex gap-[0.12rem]">
+      <div className="space-y-[0.12rem]">
+        <div className="w-28 h-28 bg-[#fc4d77] flex justify-center items-center text-6xl font-medium">{days}</div>
+        <div className="w-28 h-8 bg-[#7d1434] flex justify-center items-center font-medium">DAYS</div>
+      </div>
+      <div className="space-y-[0.12rem]">
+        <div className="w-28 h-28 bg-[#1cabd0] flex justify-center items-center text-6xl font-medium">{hours}</div>
+        <div className="w-28 h-8 bg-[#084763] flex justify-center items-center font-medium">HOURS</div>
+      </div>
+      <div className="space-y-[0.12rem]">
+        <div className="w-28 h-28 bg-[#1cabd0] flex justify-center items-center text-6xl font-medium">{minutes}</div>
+        <div className="w-28 h-8 bg-[#084763] flex justify-center items-center font-medium">MINUTES</div>
+      </div>
+      <div className="space-y-[0.12rem]">
+        <div className="w-28 h-28 bg-[#1cabd0] flex justify-center items-center text-6xl font-medium">{seconds}</div>
+        <div className="w-28 h-8 bg-[#084763] flex justify-center items-center font-medium">SECONDS</div>
+      </div>
+    </div>
+    </div>
+  );
 };
