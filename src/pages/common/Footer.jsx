@@ -9,7 +9,7 @@ function Footer() {
                     Stay Up To Date <br className="hidden md:block" />
                     With Vape Monkey Dubai
                 </p>
-                <p className="text-lg font-medium md:text-2xl">Joint our discount channel</p>
+                <p className="text-lg font-medium md:text-2xl">Join our discount channel</p>
                 <a href='https://discord.gg/NC3RXXh8'>
                  <button className="rounded-full bg-[#ff0097] px-6 py-3 text-2xl font-medium flex  gap-3 items-center"> <div className="h-8 w-8"> <Discode /></div> JOIN</button>
                 </a>
