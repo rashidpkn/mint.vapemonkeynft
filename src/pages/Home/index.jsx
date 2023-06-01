@@ -9,10 +9,11 @@ import Screen4 from './components/Screen4'
 import Screen5 from './components/Screen5'
 import Screen6 from './components/Screen6'
 import Countdown from 'react-countdown'
+import Screen7 from './components/Screen7'
 
 function Home() {
   const [walletAddress, setWalletAddress] = useState('')
-  document.body.style.overflow = "hidden"
+  // document.body.style.overflow = "hidden"
 
   return (
     <>
@@ -25,13 +26,14 @@ function Home() {
         <Screen2 />
         <Screen3 />
         <Screen4 />
-        <Screen5 />
+        {/* <Screen5 /> */}
         <Screen6 />
+        <Screen7 />
       </div>
       <Footer />
-      <div className="fixed top-0 left-0 h-screen w-full bg-black/50 z-50 backdrop-blur-sm flex justify-center items-center">
+      {/* <div className="fixed top-0 left-0 h-screen w-full bg-black/50 z-50 backdrop-blur-sm flex justify-center items-center">
         <Countdown date={new Date("1 June, 2023")} renderer={renderer} />
-      </div>
+      </div> */}
     </>
   )
 }
