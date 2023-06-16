@@ -261,7 +261,7 @@ const Selected4 = ({ setSelected }) => {
                 <li> After purchasing your VapeMonkey NFT, you can reveal a unique discount code. To do this, create an account on the VapeMonkey NFT website. This account will automatically connect to your VapeMonkey account.</li>
                 <li>Go to the Vape Monkey website.</li>
                 <li>Shop for the products you want and add them to your cart.</li>
-                <li>Proceed to checkout. Enter your unique discount code in the appropriate box during checkout. Thediscount should be applied to your total purchase.</li>
+                <li>Proceed to checkout. Enter your unique discount code in the appropriate box during checkout. The discount should be applied to your total purchase.</li>
             </ol>
 
         </div>

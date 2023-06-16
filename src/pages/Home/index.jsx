@@ -26,14 +26,11 @@ function Home() {
         <Screen2 />
         <Screen3 />
         <Screen4 />
-        {/* <Screen5 /> */}
+   
         <Screen6 />
-        <Screen7 />
+        {/* <Screen7 /> */}
       </div>
       <Footer />
-      {/* <div className="fixed top-0 left-0 h-screen w-full bg-black/50 z-50 backdrop-blur-sm flex justify-center items-center">
-        <Countdown date={new Date("1 June, 2023")} renderer={renderer} />
-      </div> */}
     </>
   )
 }
